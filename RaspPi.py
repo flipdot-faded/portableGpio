@@ -7,7 +7,7 @@ class GPIO:
     def init(self):
         gpio.setmode(gpio.BCM)
 
-    def create_pin(pin, direction):
+    def create_pin(self, pin, direction):
         libDir = None
         if direction == IN:
             libDir = gpio.IN
