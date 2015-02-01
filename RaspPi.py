@@ -1,3 +1,4 @@
+import __init__ as portableGpio
 import RPi.GPIO as gpio
 
 class GPIO:
@@ -9,9 +10,9 @@ class GPIO:
 
     def create_pin(self, pin, direction):
         libDir = None
-        if direction == IN:
+        if direction == portableGpio.IN:
             libDir = gpio.IN
-        elif direction == OUT:
+        elif direction == portableGpio.OUT:
             libDir = gpio.OUT
 
         gpio.setup(pin, libDir)
