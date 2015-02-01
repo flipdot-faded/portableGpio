@@ -1,4 +1,4 @@
-import __init__ as portableGpio
+import portableGpio
 import RPi.GPIO as gpio
 
 class GPIO:
