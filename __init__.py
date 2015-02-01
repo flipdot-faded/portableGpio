@@ -1,6 +1,6 @@
 def create(name):
-    gpioClass = __import__(name+'.GPIO')
-    return gpioClass()
+    mod = __import__(name+
+    return mod.GPIO()
 
 IN = 'in'
 OUT = 'out'
