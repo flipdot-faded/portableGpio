@@ -11,7 +11,7 @@ Example (flip a pin):
 
     pin0 = gpio.create_pin(0)
     state = pin0.get()
-    state = !state
+    state = not state
     pin0.set(state)
 
 Reference
