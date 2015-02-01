@@ -6,7 +6,7 @@ Example (flip a pin):
 
     import portableGpio
 
-    gpio = portableGpio.create('RPi') # creates abstraction for GPIO.RPi
+    gpio = portableGpio.create('RaspPi') # creates abstraction for GPIO.RPi
     gpio.init()
 
     pin0 = gpio.create_pin(0)
