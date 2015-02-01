@@ -9,7 +9,7 @@ Example (flip a pin):
     gpio = portableGpio.create('RaspPi') # creates abstraction for GPIO.RPi
     gpio.init()
 
-    pin0 = gpio.create_pin(0)
+    pin0 = gpio.create_pin(0, portableGpio.IN)
     state = pin0.get()
     state = not state
     pin0.set(state)
